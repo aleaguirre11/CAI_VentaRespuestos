@@ -8,28 +8,28 @@ namespace Ejercicio_VentaRespuestos.Entidades
 {
     public class VentaRepuesto
     {
-        public VentaRepuesto(string nombre, string direccion)
+        public VentaRepuesto(string nombreComercio, string direccion)
         {
-            _nombre = nombre;
+            _nombreComercio = nombreComercio;
             _direccion = direccion;
-            _listaProductos = new List <Repuesto>();
+            _listaRepuestos = new List <Repuesto>();
 
         }
 
-        private string _nombre;
+        private string _nombreComercio;
         private string _direccion;  
-        private List <Repuesto> _listaProductos;
+        private List <Repuesto> _listaRepuestos;
 
 
-        public string Nombre
+        public string NombreComercio
         {
             get
             {
-                return _nombre;
+                return _nombreComercio;
             }
             set
             {
-                _nombre = value;    
+                _nombreComercio = value;    
             }
         }
 
@@ -45,11 +45,29 @@ namespace Ejercicio_VentaRespuestos.Entidades
             }
         }
 
-        public List <Repuesto> ListaProductos
+        public List <Repuesto> ListaRepuestos
         {
             get
             {
-                return _listaProductos;
+                return _listaRepuestos;
+            }
+        }
+
+        public void AgregarRepuesto(Repuesto repuesto)
+        {
+
+        }
+
+        public void QuitarRepuesto(int codigo)
+        {
+
+            foreach(Repuesto repuesto in _listaRepuestos)
+            {
+                if(repuesto.Codigo == codigo)
+                {
+                    _listaRepuestos.RemoveAt(repuesto.Codigo);
+
+                }
             }
         }
     }

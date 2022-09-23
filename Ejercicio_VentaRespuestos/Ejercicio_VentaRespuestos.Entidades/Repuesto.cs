@@ -14,13 +14,15 @@ namespace Ejercicio_VentaRespuestos.Entidades
             _nombre = nombre;
             _precio = precio;
             _stock = stock;
+            _categorias = new List<Categoria>();
             
         }
 
         private int _codigo;
         private string _nombre; 
         private double _precio; 
-        private int _stock;  
+        private int _stock;
+        private List<Categoria> _categorias;       
 
         public int Codigo
         {
@@ -67,6 +69,14 @@ namespace Ejercicio_VentaRespuestos.Entidades
             set
             {
                 _stock= value;
+            }
+        }
+
+        public List<Categoria> Categorias
+        {
+            get
+            {
+                return _categorias;
             }
         }
     }

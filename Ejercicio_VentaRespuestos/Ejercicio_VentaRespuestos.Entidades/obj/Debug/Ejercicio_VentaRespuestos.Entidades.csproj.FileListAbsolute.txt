@@ -1,0 +1,6 @@
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_VentaRespuestos\Ejercicio_VentaRespuestos\Ejercicio_VentaRespuestos.Entidades\bin\Debug\Ejercicio_VentaRespuestos.Entidades.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_VentaRespuestos\Ejercicio_VentaRespuestos\Ejercicio_VentaRespuestos.Entidades\bin\Debug\Ejercicio_VentaRespuestos.Entidades.pdb
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_VentaRespuestos\Ejercicio_VentaRespuestos\Ejercicio_VentaRespuestos.Entidades\obj\Debug\Ejercicio_VentaRespuestos.Entidades.csproj.AssemblyReference.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_VentaRespuestos\Ejercicio_VentaRespuestos\Ejercicio_VentaRespuestos.Entidades\obj\Debug\Ejercicio_VentaRespuestos.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_VentaRespuestos\Ejercicio_VentaRespuestos\Ejercicio_VentaRespuestos.Entidades\obj\Debug\Ejercicio_VentaRespuestos.Entidades.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_VentaRespuestos\Ejercicio_VentaRespuestos\Ejercicio_VentaRespuestos.Entidades\obj\Debug\Ejercicio_VentaRespuestos.Entidades.pdb
