@@ -55,20 +55,85 @@ namespace Ejercicio_VentaRespuestos.Entidades
 
         public void AgregarRepuesto(Repuesto repuesto)
         {
-
+            _listaRepuestos.Add(repuesto);
         }
 
         public void QuitarRepuesto(int codigo)
         {
+            bool flag = false;
 
-            foreach(Repuesto repuesto in _listaRepuestos)
+            foreach(Repuesto repuesto in ListaRepuestos)
             {
                 if(repuesto.Codigo == codigo)
                 {
-                    _listaRepuestos.RemoveAt(repuesto.Codigo);
+                    if(repuesto.Stock != 0)
+                    {
+                        flag = false;
+                    }
+                    else
+                    {
+                        flag = true;
+                    }
+
+                    if(flag == true)
+                    {
+                        ListaRepuestos.Remove(repuesto);
+                    }
 
                 }
             }
         }
+
+        public void ModificarPrecio(int codigo, double precio)
+        {
+            foreach (Repuesto repuesto in _listaRepuestos)
+            {
+                if (repuesto.Codigo == codigo)
+                {
+                    repuesto.Precio = precio;   
+                }
+            }
+        }
+
+        public void AgregarStockRepuesto(int codigo, int stock)
+        {
+            foreach (Repuesto repuesto in _listaRepuestos)
+            {
+                if(repuesto.Codigo == codigo)
+                {
+                    repuesto.Stock += stock;
+                }
+            }
+        }
+
+        public void QuitarStockRepuesto(int codigo, int stock)
+        {
+            bool flag = false;
+ 
+            foreach (Repuesto repuesto in _listaRepuestos)
+            {
+                if (repuesto.Codigo == codigo)
+                {
+                    if(repuesto.Stock < stock)
+                    {
+                        flag = false;
+                    }
+                    else
+                    {
+                        flag = true;
+                    }
+                    if (flag == true)
+                    {
+                        repuesto.Stock -= stock;                      
+                    }
+                }
+            }
+        }
+
+        //public Repuesto TraerCategoria(int codigo)
+        //{
+
+        //}
+
     }
 }

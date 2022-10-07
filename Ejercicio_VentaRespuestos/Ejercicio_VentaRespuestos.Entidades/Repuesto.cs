@@ -14,8 +14,7 @@ namespace Ejercicio_VentaRespuestos.Entidades
             _nombre = nombre;
             _precio = precio;
             _stock = stock;
-            _categorias = new List<Categoria>();
-            
+            _categorias = new List<Categoria>();           
         }
 
         private int _codigo;
